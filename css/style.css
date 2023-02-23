@@ -20,6 +20,7 @@
 }
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 10px;
 }
@@ -32,11 +33,13 @@ body{
 /* Barra de navegacion */ 
 
 .navbar{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     background-color: var(--first-color);
     padding: var(--first-padding);
+    z-index: 90;
 }
 
 .nav-cont{
@@ -68,23 +71,73 @@ body{
     pointer-events: none;
 }
 
+/* Section video y bienvenida */
+
+.cont-text{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    bottom: -43vh;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.title{
+    font-size: 8rem;
+    color: var(--third-color);
+    margin-bottom: 4rem;
+}
+
+.btn-empezar{
+    cursor: pointer;
+    font-size: 1.8rem;
+    width: 30rem;
+    padding: 1.5rem;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    border-radius: .5rem;
+}
+
+.btn-empezar:hover{
+    background-color: rgba(255, 25, 1);
+}
 
 
 
 
-/* // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-     /* Barra de navegacion  */
+
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px){ 
+    /* Barra de navegacion */
     .navbar{
         padding: var(--second-padding);
     }
+
+    /* Section video */
+    .cont-text{
+        bottom: 0;
+        
+    }
+    .title{
+        font-size: 15rem;
+    }
+
+    .btn-empezar{
+        width: 10rem;
+    }
  }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px){ 
     /* barra de navegacion */
     .nav-cont-items{
         position: fixed;
@@ -123,13 +176,27 @@ body{
         opacity: 0;
         pointer-events: none;
     }
+
+    /* Section video */
+    .cont-text{
+        bottom: 0;
+        
+    }
+    .title{
+        font-size: 6rem;
+    }
+
+    .btn-empezar{
+        width: 25rem;
+    }
  }
 
-/* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {  }
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px){  }
 
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {  }
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px){  }
 
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (max-width: 1400px) {  }
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media screen and (max-width: 1399.98px){  }
+
