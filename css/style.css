@@ -3,6 +3,11 @@
     --second-color: rgb(255,255,255);
     --third-color: rgb(255, 35, 1);
     --four-color: rgb(85, 83, 83);
+    
+    /* medidas */
+    --first-padding: 3rem 4rem;
+    --second-padding: 3rem 2rem;
+
 }
 
 *,
@@ -24,6 +29,45 @@ body{
 }
 
 
+/* Barra de navegacion */ 
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--first-color);
+    padding: var(--first-padding);
+}
+
+.nav-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    color: var(--second-color);
+}
+
+.nav-item:hover{
+    color: var(--four-color);
+}
+
+.img-logo, .img-menu, .img-close{
+    width: 3rem;
+    pointer-events: none;
+}
+
+.btn-menu,.btn-close{
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--first-color);
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 
 
@@ -32,10 +76,54 @@ body{
 // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {  }
+@media (max-width: 576px) {
+     /* Barra de navegacion  */
+    .navbar{
+        padding: var(--second-padding);
+    }
+ }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {  }
+@media (max-width: 768px) { 
+    /* barra de navegacion */
+    .nav-cont-items{
+        position: fixed;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        background-color: var(--first-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: top 1s;
+    }
+    .nav-cont-items-show{
+        top: 9rem;
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .nav-item{
+        margin-bottom: 2rem;
+    }
+    .btn-menu{
+        position: relative;
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .btn-close{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .btn-show{
+        opacity: 0;
+        pointer-events: none;
+    }
+ }
 
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {  }
