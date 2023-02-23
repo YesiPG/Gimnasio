@@ -2,11 +2,13 @@
     --first-color: rgb(0,0,0);
     --second-color: rgb(255,255,255);
     --third-color: rgb(255, 35, 1);
-    --four-color: rgb(85, 83, 83);
+    --four-color: rgb(45, 45, 45);
     
     /* medidas */
     --first-padding: 3rem 4rem;
     --second-padding: 3rem 2rem;
+    --firts-zise: 3.5rem;
+    --second-zise: 1.3rem;
 
 }
 
@@ -73,13 +75,18 @@ body{
 
 /* Section video y bienvenida */
 
+video{
+    width: 100%;
+    height: 100%;
+}
+
 .cont-text{
     position: absolute;
     width: 100%;
     top: 2rem;
     left: 0;
     right: 0;
-    bottom: -43vh;
+    bottom: -10rem;
     background-color: rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
@@ -87,6 +94,8 @@ body{
     align-items: center;
     z-index: 50;
 }
+
+
 
 .title{
     font-size: 8rem;
@@ -106,6 +115,25 @@ body{
 
 .btn-empezar:hover{
     background-color: rgba(255, 25, 1);
+}
+
+/* Section Programas */
+.cont-progamas{
+    background-color: var(--four-color);
+    padding: var(--first-padding);
+    
+}
+
+.title-programa{
+    color: var(--third-color);
+    text-align: center;
+    font-size: var(--firts-zise);
+}
+
+.parrafos{
+    color: var(--second-color);
+    font-size: var(--second-zise);
+    margin-bottom: 4rem;
 }
 
 
