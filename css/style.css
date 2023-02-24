@@ -7,8 +7,10 @@
     /* medidas */
     --first-padding: 3rem 4rem;
     --second-padding: 3rem 2rem;
+    --third-padding: 3rem 1rem;
     --firts-zise: 3.5rem;
     --second-zise: 1.3rem;
+    --third-zise: 1rem;
 
 }
 
@@ -233,7 +235,6 @@ video{
 
 .formulario{
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -340,26 +341,6 @@ footer > .img-logo2{
 }
 
 
-/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px){ 
-    /* Barra de navegacion */
-    .navbar{
-        padding: var(--second-padding);
-    }
-
-    /* Section video */
-    .cont-text{
-        bottom: 0;
-        
-    }
-    .title{
-        font-size: 15rem;
-    }
-
-    .btn-empezar{
-        width: 10rem;
-    }
- }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 767.98px){ 
@@ -396,7 +377,7 @@ footer > .img-logo2{
         opacity: 1;
         pointer-events: unset;
     }
-
+    
     .btn-show{
         opacity: 0;
         pointer-events: none;
@@ -410,17 +391,103 @@ footer > .img-logo2{
     .title{
         font-size: 6rem;
     }
-
+    
     .btn-empezar{
         width: 25rem;
     }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px){ 
+    /* Barra de navegacion */
+    .navbar{
+        padding: var(--second-padding);
+    }
+
+    /* Section video */
+    .cont-text{
+        bottom: 0;
+        
+    }
+    .title{
+        font-size: 5rem;
+    }
+
+    .btn-empezar{
+        width: 20rem;
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .title-programa{
+        font-size: 2.5rem;
+    }
+
+    .img-items{
+        width: 35rem;
+        height: 25rem;
+    }
+    input[type="email"],input[type="text"],textarea{
+        width: 42rem;
+    }
+    input[type="reset"]{
+        margin-left: 16rem;
+    }
  }
 
-/* // `lg` applies to medium devices (tablets, less than 992px) */
-@media screen and (max-width: 991.98px){  }
+
+@media screen and (max-width: 480px){ 
+    .cont-text{
+        bottom: 15rem;
+    }
+    .title{
+        font-size: 3.8rem;
+    }
+    .btn-empezar{
+        font-size: 1.5rem;
+        width: 16rem;
+    }
+    .title-programa{
+        font-size: 2.4rem;
+    }
+    
+    .btn-susc1{
+        padding: 1rem;
+    }
+
+    input[type="email"],input[type="text"],textarea{
+        width: 37rem;
+    }
+    
+    
+ }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
-@media screen and (max-width: 1199.98px){  }
+@media screen and (max-width: 320px){ 
+    .navbar,.cont-progamas, .cont-suscription{
+        padding: var(--third-padding);
+    }
+
+    .cont-text{
+        bottom: 20rem;
+    }
+
+    .title{
+        margin-bottom: 1.5rem;
+    }
+
+    .img-items{
+        height: 21rem;
+    }
+
+    input[type="email"],input[type="text"],textarea{
+        width: 26rem;
+    }
+
+    input[type="reset"]{
+        margin-left: 3rem;
+    }
+    
+ }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media screen and (max-width: 1399.98px){  }
