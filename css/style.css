@@ -271,6 +271,7 @@ input[type="submit"]{
     padding: .5rem 2rem;
     border-radius: .5rem;
     cursor: pointer;
+    margin-top: 2rem;
     margin-left: 2rem;
 }
 
@@ -287,6 +288,10 @@ input[type="reset"]{
     cursor: pointer;
 }
 
+.p-nombre, .p-correo{
+    color: var(--second-color);
+    font-size: 1.3rem;
+}
 
 
 
