@@ -225,8 +225,67 @@ video{
     background-color: var(--third-color);
 }
 
+/* section contacto */
+.cont-contacto{
+    padding: var(--first-padding);
+    background-color: var(--four-color);
+}
 
+.formulario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
+label{
+    display: block;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+input[type="email"],input[type="text"]{
+    display: block;
+    margin-top: 1rem;
+    width: 45rem;
+    padding: .5rem;
+    background-color: rgba(255, 35, 1,.1);
+    border-bottom: 1px solid var(--third-color);
+    color: var(--second-color);
+}
+
+textarea{
+    display: block;
+    margin-top: 1rem;
+    width: 45rem;
+    height: 15rem;
+    background-color: rgba(255, 35, 1,.1);
+    border-bottom: 1px solid var(--third-color);
+    color: var(--second-color);
+}
+
+input[type="submit"]{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--third-color);
+}
+
+input[type="reset"]{
+    display: inline-block;
+    margin-left: 24rem;
+    font-size: 1.5rem;
+    color: var(--third-color);
+    background-color: var(--four-color);
+    cursor: pointer;
+}
 
 
 

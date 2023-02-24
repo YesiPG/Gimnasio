@@ -19,5 +19,15 @@
             btnMenu.classList.remove("btn-show");
             btnClose.classList.add("btn-show");
         }
+
+    })
+
+    
+    // Validacion de formulario
+    const btnEviar = d.querySelector(".btn-enviar");
+
+    btnEviar.addEventListener("click",(e)=>{
+        e.preventDefault();
+        
     })
 })();
