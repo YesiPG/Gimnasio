@@ -293,6 +293,51 @@ input[type="reset"]{
     font-size: 1.3rem;
 }
 
+/* Footer */
+footer{
+    background-color: var(--first-color);
+    padding: var(--first-padding);
+}
+
+footer > .img-logo2{
+    display: block;
+    margin: auto;
+    width: 6rem;
+    
+}
+
+.cont-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer-items{
+    margin: .5rem 3rem;
+}
+
+.link-footer{
+    display: block;
+    color: var(--second-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.link-footer:hover{
+    color: var(--four-color);
+}
+
+.p-redes-footer{
+    color: var(--second-color);
+    font-size: 1.4rem;
+}
+
+.img-redes{
+    width: 2.5rem;
+    margin: 1rem;
+}
 
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
