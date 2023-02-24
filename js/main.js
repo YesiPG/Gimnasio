@@ -27,7 +27,7 @@
     const btnEviar = d.querySelector(".btn-enviar");
 
     btnEviar.addEventListener("click",(e)=>{
-        e.preventDefault();
-        
+        // e.preventDefault();
+
     })
 })();
