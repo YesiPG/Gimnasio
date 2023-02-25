@@ -7,7 +7,7 @@
     /* medidas */
     --first-padding: 3rem 4rem;
     --second-padding: 3rem 2rem;
-    --third-padding: 3rem 1rem;
+    --third-padding: 2rem 1rem;
     --firts-zise: 3.5rem;
     --second-zise: 1.3rem;
     --third-zise: 1rem;
@@ -43,7 +43,7 @@ body{
     align-items: baseline;
     background-color: var(--first-color);
     padding: var(--first-padding);
-    z-index: 90;
+    z-index: 70;
 }
 
 .nav-cont{
@@ -73,6 +73,35 @@ body{
     background-color: var(--first-color);
     opacity: 0;
     pointer-events: none;
+}
+.btn-close{
+    top: 1rem;
+    right: 2rem; 
+}
+
+.btn-desplazar{
+    position: fixed;
+    cursor: pointer;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    background-color: var(--third-color);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-desplazar:hover{
+    background-color: var(--second-color);
+}
+
+.img-desplazar{
+    width: 4rem;
+}
+
+.btn-desplazar-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 1.5s;
 }
 
 /* Section video y bienvenida */
@@ -347,7 +376,7 @@ footer > .img-logo2{
     /* barra de navegacion */
     .nav-cont-items{
         position: fixed;
-        top: 6rem;
+        top: -10rem;
         left: 0;
         right: 0;
         background-color: var(--first-color);
@@ -356,16 +385,19 @@ footer > .img-logo2{
         justify-content: center;
         align-items: center;
         padding: 2rem;
+        padding-top: 6rem;
         opacity: 0;
         pointer-events: none;
         transition: top 1s;
+        z-index: 90;
     }
     .nav-cont-items-show{
-        top: 9rem;
+        top: 0;
         opacity: 1;
         pointer-events: unset;
     }
     .nav-item{
+        margin-right: 0;
         margin-bottom: 2rem;
     }
     .btn-menu{
@@ -485,6 +517,10 @@ footer > .img-logo2{
 
     input[type="reset"]{
         margin-left: 3rem;
+    }
+
+    .img-desplazar{
+        width: 3.5rem;
     }
     
  }
