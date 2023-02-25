@@ -1,0 +1,62 @@
+:root{
+    --first-color: rgb(0,0,0);
+    --second-color: rgb(255,255,255);
+    --third-color: rgb(255, 35, 1);
+    --four-color: rgb(45, 45, 45);
+    
+    /* medidas */
+    --first-padding: 3rem 8rem;
+    --second-padding: 3rem 2rem;
+    --third-padding: 2rem 1rem;
+    --firts-zise: 3.5rem;
+    --second-zise: 1.3rem;
+    --third-zise: 1rem;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.contenedor-blog{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: var(--four-color);
+    padding: var(--first-padding);
+    gap: 2;
+}
+
+.img-blog{
+    max-width: 100%;
+    width: 50rem;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.cont-a,.cont-p, .cont-c, .cont-ca,.cont-ex{
+    padding: var(--second-padding);
+}
+
+.parrafos{
+    text-align: start;
+}
+
+.cont-paz,.cont-casa{
+    background-color: var(--first-color);
+}
