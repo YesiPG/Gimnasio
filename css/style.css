@@ -117,7 +117,7 @@ video{
     top: 2rem;
     left: 0;
     right: 0;
-    bottom: -10rem;
+    bottom: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,7 +417,7 @@ footer > .img-logo2{
 
     /* Section video */
     .cont-text{
-        bottom: 0;
+        bottom: 40rem;
         
     }
     .title{
@@ -437,7 +437,7 @@ footer > .img-logo2{
 
     /* Section video */
     .cont-text{
-        bottom: 0;
+        bottom: 50rem;
         
     }
     .title{
@@ -469,7 +469,7 @@ footer > .img-logo2{
 
 @media screen and (max-width: 480px){ 
     .cont-text{
-        bottom: 15rem;
+        bottom: 60rem;
     }
     .title{
         font-size: 3.8rem;
@@ -500,7 +500,7 @@ footer > .img-logo2{
     }
 
     .cont-text{
-        bottom: 20rem;
+        bottom: 75rem;
     }
 
     .title{
