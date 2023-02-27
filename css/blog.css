@@ -9,8 +9,8 @@
     --second-padding: 3rem 3rem;
     --third-padding: 2rem 1rem;
     --firts-zise: 3.5rem;
-    --second-zise: 1.3rem;
-    --third-zise: 1rem;
+    --second-zise: 1.5rem;
+    --third-zise: 1.3rem;
 
 }
 
@@ -86,7 +86,7 @@ body{
 @media screen and (max-width: 575.98px){
     .cont{
         grid-column: 1/3;
-        padding: 1rem 2;
+        padding: var(--third-padding);
     }
 
     .cont2{
