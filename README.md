@@ -8,3 +8,6 @@ Esta pagina web es responsiva para mas comodida del usuario, en ella utilizamos 
 
 Link de la pagina en Netlify: 
 [Pagina Web](https://incredible-tartufo-2afa72.netlify.app)
+
+link de github pages:
+[Pagina web](https://yesipg.github.io/Gimnasio/)
