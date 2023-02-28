@@ -511,7 +511,7 @@ footer > .img-logo2{
  }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
-@media screen and (max-width: 320px){ 
+@media screen and (max-width: 320px){ /* heigh 521px */
     .navbar,.cont-progamas, .cont-suscription{
         padding: var(--third-padding);
     }

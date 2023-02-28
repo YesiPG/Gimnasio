@@ -38,17 +38,20 @@
         let regexNombre = /^[a-zA-ZÀ-ÿ\s]+$/;
         let regexCorreo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-.]+$/;
         
-        if(!regexNombre.test(nombreForm)){
-            pNombre.innerHTML = "El dato que ingresaste no es un nombre";
+        if(regexNombre.test(nombreForm)){
+            pNombre.innerHTML = "El nombre ingresado es correcto";
         }
-        console.log(regexNombre.test(nombreForm));
-
-        if(!regexCorreo.test(correoForm)){
-            pCorreo.innerHTML = "No se ingreso correctamente el correo";
+        else{
+            pNombre.innerHTML = "El nombre ingresado es incorrecto";
         }
-        console.log(regexCorreo.test(correoForm));
 
-        
+        if(regexCorreo.test(correoForm)){
+            pCorreo.innerHTML ="El correo ingresado es correcto";
+        }
+        else{
+            pCorreo.innerHTML ="El correo ingresado es incorrecto";
+        }
+
     });
 
     btnReset.addEventListener("click",(e)=>{
