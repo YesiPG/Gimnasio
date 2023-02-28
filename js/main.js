@@ -37,7 +37,6 @@
         const nombreForm = d.getElementById("nombreForm").value;
         const correoForm = d.getElementById("correoForm").value;
 
-        e.preventDefault();
 
         let regexNombre = /^[a-zA-ZÀ-ÿ\s]+$/;
         let regexCorreo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-.]+$/;
@@ -46,6 +45,7 @@
             pNombre.innerHTML = "El nombre ingresado es correcto";
         }
         else{
+            e.preventDefault();
             pNombre.innerHTML = "El nombre ingresado es incorrecto";
         }
 
@@ -53,6 +53,7 @@
             pCorreo.innerHTML ="El correo ingresado es correcto";
         }
         else{
+            e.preventDefault();
             pCorreo.innerHTML ="El correo ingresado es incorrecto";
         }
 
