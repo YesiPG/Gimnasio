@@ -117,7 +117,7 @@ video{
     top: 2rem;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,7 +481,7 @@ footer > .img-logo2{
 
 @media screen and (max-width: 480px){ 
     .cont-text{
-        bottom: 45rem;
+        bottom: 30rem;
     }
     .title{
         font-size: 3.8rem;
@@ -529,11 +529,11 @@ footer > .img-logo2{
     }
 
     input[type="email"],input[type="text"],textarea{
-        width: 26rem;
+        width: 23rem;
     }
 
     input[type="reset"]{
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
 
     .img-desplazar{
