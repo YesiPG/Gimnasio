@@ -27,12 +27,16 @@
     // Validacion de formulario
     const btnEviar = d.querySelector(".btn-enviar");
     const btnReset = d.querySelector(".btn-reset");
-    const nombreForm = d.getElementById("nombreForm").value;
-    const correoForm = d.getElementById("correoForm").value;
+    
     const pNombre = d.querySelector(".p-nombre");
     const pCorreo = d.querySelector(".p-correo");
 
+    
+
     btnEviar.addEventListener("click",(e)=>{
+        const nombreForm = d.getElementById("nombreForm").value;
+        const correoForm = d.getElementById("correoForm").value;
+
         e.preventDefault();
 
         let regexNombre = /^[a-zA-ZÀ-ÿ\s]+$/;
